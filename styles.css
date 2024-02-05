@@ -12,6 +12,9 @@ body {
 
 .logo-sidebar {
   flex: 1;
+
+  background-image: url(./images/sky-moon-gradient.jpg);
+  background-size: cover;
 }
 
 main {
