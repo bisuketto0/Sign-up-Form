@@ -3,3 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+
+  height: 100vh;
+}
+
+.logo-sidebar {
+  flex: 1;
+}
+
+main {
+  flex: 2;
+}
