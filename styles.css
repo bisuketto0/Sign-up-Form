@@ -31,7 +31,7 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr;
 }
 
 main .hero {
@@ -39,8 +39,23 @@ main .hero {
   background-color: #CED0CE;
 }
 
-main .form {
+/* | Form */
+
+main .form-section {
+  padding: 15px 0 0 30px;
   background-color: #E6E8E6;
+}
+
+main .form-section h1 {
+  height: 20%;
+}
+
+main .form-section form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  height: 80%;
 }
 
 main .action {
