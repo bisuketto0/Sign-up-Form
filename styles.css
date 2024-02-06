@@ -64,6 +64,14 @@ main .description {
   padding: 70px 0 0 var(--spacer);
 }
 
+main .description p {
+  width: 60%;
+}
+
+main .description p + p{
+  margin-top: 1rem;
+}
+
 /* | Form section*/
 
 main .form-section {
