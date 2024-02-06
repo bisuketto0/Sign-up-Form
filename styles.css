@@ -6,6 +6,9 @@
   --bg-color: #F8FCDA;
   --secondary-bg-color: #ffffff;
   --border-color: rgba(202, 196, 206, 0.2);
+  --button-bg-clr: #295135;
+  --button-shadow: rgba(14, 22, 18, 0.7);
+  --button-text-clr: #ffffff;
 
   --focus-outline: #183C47;
   --focus-shadow: rgba(24, 60, 71, 0.7);
@@ -13,6 +16,8 @@
   --invalid-shadow: rgba(164, 32, 27, 0.7);
   --valid-outline: #7FD1B9;
   --valid-shadow: rgba(127, 209, 185, 0.7);
+
+  --spacer: 30px;
 }
 
 * {
@@ -56,13 +61,13 @@ main {
 /* | Description section */
 
 main .description {
-  padding: 70px 0 0 25px;
+  padding: 70px 0 0 var(--spacer);
 }
 
 /* | Form section*/
 
 main .form-section {
-  padding: 15px 0 0 30px;
+  padding: 15px 0 0 var(--spacer);
   background-color: var(--secondary-bg-color);
 
   z-index: 1;
@@ -105,7 +110,22 @@ main .form-section form input {
 /* | Action section */
 
 main .action {
+  padding: 25px 0 0 var(--spacer);
+}
 
+main .action button {
+  padding: .8rem 2.8rem;
+  background-color: var(--button-bg-clr);
+
+  font-family: inherit;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--button-text-clr);
+
+  border: none;
+  border-radius: .3rem;
+  box-shadow: 2px 2px 10px var(--button-shadow);
+  cursor: pointer;
 }
 
 /* | Pseudo-elements */
