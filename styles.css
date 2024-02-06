@@ -13,6 +13,7 @@ body {
   height: 100vh;
 
   font-family: 'Inter', Verdana, Tahoma, sans-serif;
+  font-size: 1rem;
   line-height: 1.3rem;
   color: #697268;
 }
@@ -34,12 +35,14 @@ main {
   grid-template-rows: 1fr 1.5fr 1fr;
 }
 
+/* | Description section */
+
 main .description {
   padding: 70px 0 0 25px;
   background-color: #CED0CE;
 }
 
-/* | Form */
+/* | Form section*/
 
 main .form-section {
   padding: 15px 0 0 30px;
@@ -52,11 +55,31 @@ main .form-section h1 {
 
 main .form-section form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 40%;
   grid-template-rows: 1fr 1fr 1fr;
 
   height: 80%;
 }
+
+main .form-section form label {
+  display: block;
+
+  font-size: .9rem;
+}
+
+main .form-section form input {
+  background-color: inherit;
+  width: 75%;
+  padding: 2px;
+
+  border: 1px solid rgba(105, 104, 114, 0.4);
+  border-radius: .1rem;
+
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* | Action section */
 
 main .action {
   background-color: #CED0CE;
