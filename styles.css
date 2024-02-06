@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
 :root {
-  --text-color: #1A181B;
-  --secondary-text-color: #697268;
-  --bg-color: #FBF5F3;
-  --border-color: rgba(105, 104, 114, 0.2);
+  --text-color: #191919;
+  --secondary-text-color: #69626D;
+  --bg-color: #F8FCDA;
+  --secondary-bg-color: #ffffff;
+  --border-color: rgba(202, 196, 206, 0.2);
 
-  --focus-outline: #3E8989;
-  --focus-shadow: rgba(62, 137, 137, 0.7);
+  --focus-outline: #183C47;
+  --focus-shadow: rgba(24, 60, 71, 0.7);
+  --invalid-outline: #A41F1B;
+  --invalid-shadow: rgba(164, 32, 27, 0.7);
+  --valid-outline: #7FD1B9;
+  --valid-shadow: rgba(127, 209, 185, 0.7);
 }
 
 * {
@@ -29,8 +34,9 @@ body {
 }
 
 .logo-sidebar {
-  background-image: url(./images/sky-moon-gradient.jpg);
+  background-image: url(./images/wallpaper_25.png);
   background-size: cover;
+  background-position: center;
 }
 
 .logo-sidebar .logo {
@@ -57,6 +63,7 @@ main .description {
 
 main .form-section {
   padding: 15px 0 0 30px;
+  background-color: var(--secondary-bg-color);
 
   z-index: 1;
 
@@ -80,7 +87,7 @@ main .form-section form {
 main .form-section form label {
   display: block;
 
-  font-size: .9rem;
+  font-size: .7rem;
 }
 
 main .form-section form input {
@@ -108,4 +115,11 @@ main .form-section form input:focus {
   outline: 2px solid var(--focus-outline);
 
   box-shadow: 2px 6px 10px -4px var(--focus-shadow);
+}
+
+main .form-section form input:invalid {
+  border-radius: .2rem;
+  outline: 2px solid var(--invalid-outline);
+
+  box-shadow: 2px 6px 10px -4px var(--invalid-shadow);
 }
