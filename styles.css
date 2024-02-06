@@ -34,7 +34,7 @@ main {
   grid-template-rows: 1fr 1.5fr 1fr;
 }
 
-main .hero {
+main .description {
   padding: 70px 0 0 25px;
   background-color: #CED0CE;
 }
