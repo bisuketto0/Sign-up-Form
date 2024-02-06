@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
+:root {
+  --text-color: #1A181B;
+  --secondary-text-color: #697268;
+  --bg-color: #FBF5F3;
+  --border-color: rgba(105, 104, 114, 0.2);
+
+  --focus-outline: #3E8989;
+  --focus-shadow: rgba(62, 137, 137, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +25,7 @@ body {
   font-family: 'Inter', Verdana, Tahoma, sans-serif;
   font-size: 1rem;
   line-height: 1.3rem;
-  color: #1A181B;
+  color: var(--text-color);
 }
 
 .logo-sidebar {
@@ -33,20 +43,20 @@ body {
 main {
   display: grid;
   grid-template-rows: 1fr 1.5fr 1fr;
+
+  background-color: var(--bg-color);
 }
 
 /* | Description section */
 
 main .description {
   padding: 70px 0 0 25px;
-  background-color: #FBF5F3;
 }
 
 /* | Form section*/
 
 main .form-section {
   padding: 15px 0 0 30px;
-  background-color: #FBF5F3;
 
   z-index: 1;
 
@@ -64,7 +74,7 @@ main .form-section form {
 
   height: 80%;
 
-  color: #697268;
+  color: var(--secondary-text-color);
 }
 
 main .form-section form label {
@@ -78,7 +88,7 @@ main .form-section form input {
   width: 75%;
   padding: 3px 7px;
 
-  border: 2px solid rgba(105, 104, 114, 0.2);
+  border: 2px solid var(--border-color);
   border-radius: .2rem;
 
   font-family: inherit;
@@ -88,14 +98,14 @@ main .form-section form input {
 /* | Action section */
 
 main .action {
-  background-color: #FBF5F3;
+
 }
 
 /* | Pseudo-elements */
 
 main .form-section form input:focus {
   border-radius: .2rem;
-  outline: 2px solid #3E8989;
+  outline: 2px solid var(--focus-outline);
 
-  box-shadow: 2px 6px 10px -4px rgba(62, 137, 137, 0.6);
+  box-shadow: 2px 6px 10px -4px var(--focus-shadow);
 }
