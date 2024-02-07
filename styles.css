@@ -3,8 +3,8 @@
 :root {
   --text-color: #191919;
   --secondary-text-color: #69626D;
-  --bg-color: #F8FCDA;
-  --secondary-bg-color: #ffffff;
+  --bg-color: #f2f1ef;
+  --secondary-bg-color: #f7f7f7;
   --border-color: rgba(202, 196, 206, 0.2);
   --button-bg-clr: #295135;
   --button-shadow: rgba(14, 22, 18, 0.7);
@@ -42,6 +42,11 @@ body {
   background-image: url(./images/wallpaper_25.png);
   background-size: cover;
   background-position: center;
+
+  margin: 10px 0 10px 10px;
+
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .logo-sidebar .logo {
@@ -55,7 +60,11 @@ main {
   display: grid;
   grid-template-rows: 1fr 1.5fr 1fr;
 
+  margin: 10px;
   background-color: var(--bg-color);
+
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* | Description section */
