@@ -35,11 +35,11 @@
       <form id="sign-up" method="post">
         <div class="form-item">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name">
+          <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]+">
         </div>
         <div class="form-item">
           <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name">
+          <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+">
         </div>
 
         <div class="form-item">
@@ -48,12 +48,13 @@
         </div>
         <div class="form-item">
           <label for="phone">PHONE NUMBER</label>
-          <input type="tel" name="phone" id="phone">
+          <input type="number" name="phone" id="phone">
         </div>
 
         <div class="form-item">
           <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password">
+          <input type="password" name="password" id="password"
+                 pattern="(^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$)">
         </div>
         <div class="form-item">
           <label for="confirm-password">CONFIRM PASSWORD</label>
