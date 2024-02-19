@@ -35,20 +35,26 @@
       <form id="sign-up" method="post">
         <div class="form-item">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" pattern="[a-zA-Z]+">
+          <input type="text" name="first-name" id="first-name" 
+                 pattern="[a-zA-Z\s]+"
+                 placeholder="Jesus">
         </div>
         <div class="form-item">
           <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+">
+          <input type="text" name="last-name" id="last-name" 
+                 pattern="[a-zA-Z\s]+"
+                 placeholder="Christ">
         </div>
 
         <div class="form-item">
           <label for="email">E-MAIL</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email"
+                 placeholder="your@email.com">
         </div>
         <div class="form-item">
           <label for="phone">PHONE NUMBER</label>
-          <input type="number" name="phone" id="phone">
+          <input type="number" name="phone" id="phone"
+                 placeholder="12912341234">
         </div>
 
         <div class="form-item">
