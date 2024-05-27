@@ -60,11 +60,12 @@
         <div class="form-item">
           <label for="password">PASSWORD</label>
           <input type="password" name="password" id="password"
-                 pattern="(^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$)">
+                 pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,})">
         </div>
         <div class="form-item">
           <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm-password" id="confirm-password">
+          <input type="password" name="confirm-password" id="confirm-password"
+                 pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,})">
         </div>
       </form>
     </section>
