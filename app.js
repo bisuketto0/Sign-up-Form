@@ -28,3 +28,4 @@ document.getElementById("show-pass").addEventListener("click", function() {
     passConfirm.type = "password"
   }
 })
+
