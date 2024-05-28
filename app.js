@@ -1,5 +1,6 @@
 let pass = ''
 let passConfirm = ''
+let checkbox = ''
 
 document.getElementById("password").addEventListener('keyup', function() {
   pass = this.value
@@ -17,8 +18,9 @@ document.getElementById("confirm-password").addEventListener('keyup', function()
 document.getElementById("show-pass").addEventListener("click", function() {
   pass = document.getElementById("password")
   passConfirm = document.getElementById("confirm-password")
+  checkbox = document.getElementById("show-pass")
 
-  if(pass.type === "password") {
+  if(checkbox.checked) {
     pass.type = "text"
     passConfirm.type = "text"
   } else {
